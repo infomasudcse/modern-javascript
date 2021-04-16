@@ -1,30 +1,47 @@
-//switch statement 
-// it compares  as ===
+// funciton declaration 
 
-const grade = 'D';
-
-switch(grade){
-    case 'A':
-        console.log('You got an A!');
-        break;
-    case 'B':
-        console.log('You got an B!');
-        break;
-    case 'C':
-        console.log('You got an C!');
-        break;
-    case 'D':
-        console.log('You got an D!');
-        break;
-    case 'E':
-        console.log('You got an E!');
-        break;
-    case 'F':
-        console.log('You got an F!');
-        break;
-    default:
-        console.log('Not a valid grade');
+// function greet(){
+//     console.log('Hello There');
+// }
 
 
-}
+// greet();
+
+
+
+// funciton expression 
+
+// const speak = function(){
+//     console.log('Good Day');
+// }
+
+// speak();
+
+
+// arguments and parameters 
+
+// const ciao = function(name ='Luigi', time='night'){
+//     console.log(`Good ${time} ${name}`);
+// }
+// arguments order is important 
+
+//ciao();
+
+//arraow function 
+
+// const greet = () => 'Hello World';
+// const result = greet();
+// console.log(result);
+
+const bill = (products, tax) => {
+    let total = 0;
+    for(let i = 0; i< products.length; i++){
+        total += products[i] + products[i] * tax;
+    }
+    return total;
+
+};
+
+console.log(bill([10,15,20], 0.2));
+
 
