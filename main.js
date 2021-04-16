@@ -1,68 +1,21 @@
+// break 
 
-// Undefined
-let year ;
-console.log(year, year + 2, `The year is ${year}`);
-// Null
-let myAge = null; 
-console.log(myAge, myAge + 2, `The year is ${myAge}`);
-
-// Boolean
-console.log(true);
-console.log(flase);
-
-//Methods can return boolan
-let email = ‘masud@infomasud.com’;
-let result = email.includes(‘@’);
-console.log(result);
-
-let names = [‘Karim’,’Masud’,’Alam’];
-let results = names.includes(‘Masud’);
-console.log(results);
-// comparison operators 
-let age = 30;
-console.log(age == 30);
-console.log(age == 25);
-console.log(age != 30);
-console.log(age != 25);
-console.log(age > 25);
-console.log(age  < 25);
-console.log(age  <= 30);
-console.log(age >= 30);
-
-let name = ‘karim’;
-console.log(name  ==  ‘karim’);
-console.log(name  ==  ‘Karim’);
-console.log(name  > ‘abdul’);
-console.log(name  >  ‘Alam’);
+const scores = [50, 25, 0, 100, 20, 10];
+for(let i = 0; i < scores.length; i++){
 
 
-//Comparison
-
-//loose comparison
-let age = 30;
-console.log(age == 30);
-console.log(age == ‘30’);
-console.log(age != 30);
-console.log(age != ‘30’);
+    if(scores[i] === 0){
+        continue; // this statement finish current iteration and do not let execute  rest of code for this iteration but loop continue for rest of iteration 
+    }
 
 
-// strict comparison
-console.log(age === 30);
-console.log(age === ‘30’);
-console.log(age !== 30);
-console.log(age !== ‘30’);
+    console.log('Your score: ', scores[i]);
 
 
-// Type Conversion
-
-let score =  ‘100’;
-console.log(score + 1);
-score = Number(score);
-console.log(score + 1)
-console.log( typeof score); //get variable type
 
 
-let agee = 30;
-agee = String(30);
-console.log(agee, typeof agee);
-
+    if(scores[i] === 100){
+        console.log('congrets, You got the  top score');
+        break; // this break the loop and control flow gets out form the loop 
+    }
+}

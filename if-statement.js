@@ -11,17 +11,17 @@
 //     console.log("that's a lot of people");
 // }
 
-const password = 'pa@s';
+// const password = 'pa@s';
 
 
 
 
-if(password.length >= 12){
-    console.log(' that password is might strong ! ');
+// if(password.length >= 12){
+//     console.log(' that password is might strong ! ');
 
-}else if(password.length >= 8 ){
-    console.log(' that password is long enough ! ');
+// }else if(password.length >= 8 ){
+//     console.log(' that password is long enough ! ');
 
-}else{
-    console.log('Please use more longer password at least 8 character ');
-}
+// }else{
+//     console.log('Please use more longer password at least 8 character ');
+// }

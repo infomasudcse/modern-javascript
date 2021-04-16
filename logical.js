@@ -18,7 +18,7 @@ if(password.length >= 12 && password.includes('@')){
 let user = false;
 
 if(!user){
-    console.lof('You must be loggen in ');
+    console.log('You must be loggen in ');
 }
 
 console.log(!true); // print false
