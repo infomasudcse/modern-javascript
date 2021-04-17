@@ -1,47 +1,18 @@
-// funciton declaration 
+// callback function  & foreach
 
-// function greet(){
-//     console.log('Hello There');
-// }
+let people = ['azim', 'maruf', 'mollik', 'badol'];
 
+// people.forEach(person => {
+//     console.log(person);
+// });
 
-// greet();
-
-
-
-// funciton expression 
-
-// const speak = function(){
-//     console.log('Good Day');
-// }
-
-// speak();
+// people.forEach( (person, index) => {
+//        console.log(index, person);
+//      });
 
 
-// arguments and parameters 
-
-// const ciao = function(name ='Luigi', time='night'){
-//     console.log(`Good ${time} ${name}`);
-// }
-// arguments order is important 
-
-//ciao();
-
-//arraow function 
-
-// const greet = () => 'Hello World';
-// const result = greet();
-// console.log(result);
-
-const bill = (products, tax) => {
-    let total = 0;
-    for(let i = 0; i< products.length; i++){
-        total += products[i] + products[i] * tax;
-    }
-    return total;
-
-};
-
-console.log(bill([10,15,20], 0.2));
-
-
+//use as callback 
+const logPerson = (person, index)=> {
+       console.log(index, person); 
+}
+people.forEach(logPerson);
