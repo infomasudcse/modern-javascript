@@ -1,27 +1,27 @@
-// callback function  & foreach
+// object 
 
-let people = ['azim', 'maruf', 'mollik', 'badol','Kalam', 'masud'];
+let user = {
+    name : 'Masud',
+    email : 'infomasud@gmail.com',
+    location : 'Dhaka',
+    blogs : ['lorem ispam', 'bello bla'],
+    login : function(){
+        console.log(' the user logged in');
+    },
+    logout: function(){
+        console.log('the user logged out ');
+    },
+    logBlogs: function(){
 
-// people.forEach(person => {
-//     console.log(person);
-// });
+        console.log('the user has following blogs');
+        this.blogs.forEach(blog=>{
+            console.log(blog);
+        })
+    }
 
-// people.forEach( (person, index) => {
-//        console.log(index, person);
-//      });
+}
+
+console.log(user.name);
 
 
-//use as callback 
-// const logPerson = (person, index)=> {
-//        console.log(index, person); 
-// }
-// people.forEach(logPerson);
-
-//output to browser using refrence 
-const ul = document.querySelector('.people');
-let html =``;
-people.forEach(person => {
-    html += `<li> ${person}</li>`;
-});
-
-ul.innerHTML =  html;
+user.logBlogs();
